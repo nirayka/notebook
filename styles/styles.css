@@ -140,11 +140,6 @@ h5 {
     font-size: 100px;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .button {
     color: #353B3D;
     font-family: 'Playfair Display', serif;
@@ -221,7 +216,7 @@ p {
     }
 
     h1 {
-        font-size: 20vw;
+        font-size: 17vw;
     }
 
     h2 {
@@ -236,6 +231,10 @@ p {
         font-size: 6vw;
     }
 
+    #intro {
+        font-size: 7vw;
+    }
+
     p {
         font-size: 6vw;
     }
@@ -244,9 +243,18 @@ p {
     h2,
     h3,
     h4,
-    p,
+    p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     #intro,
-    #row {
+    .row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    * {
         padding-left: 0;
         padding-right: 0;
     }
