@@ -130,9 +130,7 @@ a:hover {
     color: #C38266;
 }
 
-div.nextcolumn:hover {
-    color: #E2C8B6;
-}
+
 
 h5 {
     color: #262B2C;
@@ -216,19 +214,20 @@ p {
     }
 
     h1 {
-        font-size: 17vw;
+        font-size: 15vw;
     }
 
     h2 {
-        font-size: 10vw;
+        font-size: 8vw;
+        text-align: center;
     }
 
     h3 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     h4 {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     #intro {
@@ -239,23 +238,22 @@ p {
         font-size: 6vw;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p {
+
+    * {
         padding-left: 0;
         padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    #intro,
     .row {
         padding-left: 0;
         padding-right: 0;
     }
 
-    * {
-        padding-left: 0;
-        padding-right: 0;
+    hr {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
     }
 }
