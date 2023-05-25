@@ -3,11 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=EB+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,600;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&family=Pompiere&family=Work+Sans&display=swap');
 
 @font-face {
     font-family: 'Bighouse Regular';
@@ -16,56 +13,6 @@
     src: url('fonts/bighouse-regular.otf') format('opentype');
 }
 
-@font-face {
-    font-family: 'Emperors';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/Emperors.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Clockwork';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/clockwork.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Clockwork 3D';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/clockwork-3d.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Clueless';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/adlib.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Courier';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/courier.ttf') format('truetype');
-}
-
-
-@font-face {
-    font-family: 'Grooves';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/grooves.ttf') format('truetype');
-}
-
-
-@font-face {
-    font-family: 'Fairytail';
-    font-style: normal;
-    font-weight: normal;
-    src: url('fonts/fairytail.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Reenie';
@@ -98,55 +45,45 @@ h1 {
     float: center;
 }
 
+h2,
+h3,
+h4 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 h2 {
     color: #45545E;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
     font-size: 35px;
     font-weight: 600;
     padding-left: 10%;
     padding-right: 10%;
-    font-style: italic;
+
 }
 
 h3 {
     color: #464749;
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     margin-top: 2.5%;
-    margin-bottom: 2.5%
+    margin-bottom: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
 }
 
 h4 {
     color: #353B3D;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 2.5%;
-    margin-bottom: 2.5%
+    margin-bottom: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
 }
 
 a:hover {
     color: #C38266;
-}
-
-
-
-h5 {
-    color: #262B2C;
-    font-family: 'Playfair Display', serif;
-    font-size: 100px;
-}
-
-.button {
-    color: #353B3D;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 17px;
-}
-
-.button:hover {
-    color: #D3BDA8;
 }
 
 a {
@@ -163,28 +100,10 @@ p {
     margin-right: 10%;
 }
 
-.column p {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 2.5%;
-}
-
 #intro {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 25px;
-}
-
-.previous {
-    text-align: left;
-    color: black;
-    line-height: 23px;
-}
-
-.next {
-    text-align: right;
-    color: black;
-    line-height: 23px;
 }
 
 .row {
@@ -197,6 +116,18 @@ p {
     width: 33.33%;
 }
 
+.column p {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2.5%;
+}
+
+.column h3,
+.column h4 {
+    text-align: center;
+}
+
+
 .column img {
     max-width: 70%
 }
@@ -208,13 +139,15 @@ p {
     clear: both;
 }
 
+
+
 @media only screen and (max-width: 700px) {
     .column {
         width: 100%;
     }
 
     h1 {
-        font-size: 15vw;
+        font-size: 13vw;
     }
 
     h2 {
@@ -224,10 +157,12 @@ p {
 
     h3 {
         font-size: 7vw;
+        text-align: center;
     }
 
     h4 {
         font-size: 5vw;
+        text-align: center;
     }
 
     #intro {
