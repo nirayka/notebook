@@ -1,9 +1,4 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=EB+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&family=Pompiere&family=Work+Sans&display=swap');
 
 @font-face {
@@ -21,11 +16,13 @@
     src: url('fonts/reenie.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Walter';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/walter.ttf') format('truetype');
+}
 
-/*
- * TODO: adjust header fonts with italics, font-weight, etc.
- * add norah jones pic
- */
 
 /* STYLES */
 body {
@@ -53,26 +50,30 @@ h1 {
 h2,
 h3,
 h4 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Walter';
 }
 
 h2 {
-    color: #45545E;
+    color: #3C3D3E;
     text-align: left;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 575;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 h3 {
     color: #464749;
+    font-style: italic;
+    font-weight: 525;
     font-size: 25px;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
     padding-left: 10%;
     padding-right: 10%;
     text-align: left;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 h4 {
@@ -108,6 +109,10 @@ p {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 25px;
+}
+
+.left {
+    text-align: left;
 }
 
 .row {
@@ -191,7 +196,6 @@ p {
 
 
 /* TODO: maybe make backside black and then add text to that image*/
-/* TODO: make font typewriter? */
 /* Style the back side */
 .fc-back {
     transform: rotateY(180deg);
@@ -205,9 +209,7 @@ p {
 }
 
 
-
-
-
+/* MOBILE STYLES */
 @media only screen and (max-width: 700px) {
 
     * {
@@ -265,10 +267,6 @@ p {
 
     p {
         font-size: 6vw;
-    }
-
-    .fc:active .fc-inner {
-        transform: rotateY(180deg);
     }
 
 
