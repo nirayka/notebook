@@ -22,6 +22,11 @@
 }
 
 
+/*
+ * TODO: adjust header fonts with italics, font-weight, etc.
+ * add norah jones pic
+ */
+
 /* STYLES */
 body {
     background-color: #EDE2D4;
@@ -48,7 +53,7 @@ h1 {
 h2,
 h3,
 h4 {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 h2 {
@@ -58,7 +63,6 @@ h2 {
     font-weight: 600;
     padding-left: 10%;
     padding-right: 10%;
-
 }
 
 h3 {
@@ -129,7 +133,16 @@ p {
 
 
 .column img {
-    max-width: 70%
+    max-width: 80%
+}
+
+.four-column {
+    float: left;
+    width: 25%
+}
+
+.four-column img {
+    max-width: 90%;
 }
 
 /* Clear floats after the columns */
@@ -140,10 +153,91 @@ p {
 }
 
 
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.fc {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EDE2D4;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+/* This container is needed to position the front and back side */
+.fc-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.fc:hover .fc-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.fc-front,
+.fc-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* TODO: maybe make backside black and then add text to that image*/
+/* TODO: make font typewriter? */
+/* Style the back side */
+.fc-back {
+    transform: rotateY(180deg);
+}
+
+.fc,
+.fc-inner,
+.fc-front,
+.fc-back {
+    background-color: blue;
+}
+
+
+
+
 
 @media only screen and (max-width: 700px) {
+
+    * {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    hr {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+
     .column {
-        width: 100%;
+        width: 100%
+    }
+
+    .four-column {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     h1 {
@@ -173,22 +267,9 @@ p {
         font-size: 6vw;
     }
 
-
-    * {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: 0;
+    .fc:active .fc-inner {
+        transform: rotateY(180deg);
     }
 
-    .row {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
-    hr {
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
-    }
 }
